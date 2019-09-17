@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626">
+
+    <ImageView
+        android:id="@+id/QRCodeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="46dp"
+        android:background="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toTopOf="@+id/deviceNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:srcCompat="@android:drawable/screen_background_light" />
+
+    <EditText
+        android:id="@+id/deviceNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Device Name"
+        android:inputType="textPersonName"
+        android:textColor="#d9d9d9"
+        android:textColorHint="#d9d9d9"
+        app:layout_constraintBottom_toTopOf="@+id/saveLoadButton"
+        app:layout_constraintStart_toStartOf="@+id/QRCodeView"
+        app:layout_constraintTop_toBottomOf="@+id/QRCodeView" />
+
+    <Button
+        android:id="@+id/saveLoadButton"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:background="#12b4e6"
+        android:text="Save And Load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deviceNameText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="Device Name Must be Unique"
+        android:textColor="#d9d9d9"
+        app:layout_constraintBottom_toTopOf="@+id/deviceNameText"
+        app:layout_constraintStart_toStartOf="@+id/deviceNameText" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="QR Code saves to Gallery"
+        android:textColor="#d9d9d9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

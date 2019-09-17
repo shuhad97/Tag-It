@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/tagitButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="13dp"
+        android:background="#199ec7"
+        android:text="Tag It!"
+        app:layout_constraintBottom_toTopOf="@+id/readitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/readitButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="12dp"
+        android:background="#40bc86"
+        android:text="READ IT"
+        app:layout_constraintBottom_toTopOf="@+id/myDevices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagitButton" />
+
+    <Button
+        android:id="@+id/myDevices"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="13dp"
+        android:background="#fcb410"
+        android:text="My Scanned Devices"
+        app:layout_constraintBottom_toTopOf="@+id/reportsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readitButton" />
+
+    <Button
+        android:id="@+id/reportsButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="8dp"
+        android:background="#aaaaaa"
+        android:text="My reports "
+        app:layout_constraintBottom_toTopOf="@+id/updateDetailsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myDevices" />
+
+    <Button
+        android:id="@+id/signoutButton"
+        android:layout_width="147dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:background="#e6124a"
+        android:text="Sign Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateDetailsButton" />
+
+    <Button
+        android:id="@+id/updateDetailsButton"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="82dp"
+        android:text="Update Details"
+        app:layout_constraintBottom_toTopOf="@+id/signoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportsButton" />
+
+</android.support.constraint.ConstraintLayout>
