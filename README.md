@@ -7,3 +7,4 @@ Features include;
 - QR code location based reporting
 - Managing devices & reports
 - Messages via reports
+- Viewing location of reports via Google Maps
